@@ -1,0 +1,33 @@
+{
+  "name": "oppwise",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "node scripts/setup.js",
+    "test": "node --test tests/parser.test.js tests/scam.test.js tests/logic.test.js tests/sync.test.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "bcryptjs": "^2.4.3",
+    "chrono-node": "^2.10.1",
+    "jose": "^5.9.6",
+    "next": "14.2.35",
+    "pg": "^8.13.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tesseract.js": "^7.0.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "3.4.19"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
